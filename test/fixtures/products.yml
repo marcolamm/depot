@@ -1,15 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: MyString
-  description: MyText
-  price: 9.99
-  image_url: MyString
+  title: Kaffe
+  description: Kalter Kaffe 566
+  price: 999.02
+  image_url: 
   available: false
 
 two:
-  title: MyString
-  description: MyText
-  price: 9.99
-  image_url: MyString
-  available: false
+  title: Haus
+  description: Reihenhaus in St.Gallen
+  price: 1000000.55
+  image_url: guthaus.jpg
+  available: true
+  
+ three:
+  title: Bergschuhe
+  description: Salomon Climb 4.9
+  price:A66.50
+  image_url: Salewa.pdf
+  available: true
+  
