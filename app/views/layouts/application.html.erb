@@ -5,10 +5,16 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  
+ 
+ 
 </head>
 <body>
+<div id="titel">
+<h2>MARCO'S WEB-STORE   </h2>
+</div>
+<center><%= yield %></center>
 
-<%= yield %>
 
 </body>
 </html>
