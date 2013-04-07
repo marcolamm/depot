@@ -11,7 +11,7 @@
  *= require_self
  *= require_tree .
  */
-body {
+/* body {
 
 font-size: small;
 margin:20px;
@@ -21,8 +21,8 @@ width:95%;
 margin-top:10px;
 
 
-}
-#titel  {
+} */
+/* #titel  {
  background-color: green;
  
  border: inset;
@@ -38,7 +38,7 @@ font-family: verdana;
  text-align:left;
 text-shadow: 2px 2px darkgrey;
 color: lightgreen;
-}
+ }*/
 #banner {
 background: #9c9;
 padding-top: 10px;

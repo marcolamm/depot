@@ -10,9 +10,10 @@
     <%= image_tag(product.image_url) %>
     <h3><%= product.title %></h3>
 	
-		description: <%=sanitize product.description %>
+		 <%=sanitize product.description %>
  <div class="price_line" >
-price: CHF <span class="price" ><%= product.price %></span>
-</div>
+ <span class="price"><%= number_to_currency(product.price) %></span>
+
+ </div>
   </div>
 <% end %>
