@@ -9,7 +9,7 @@ class Product < ActiveRecord::Base
 	with: %r{\.(gif|jpg|png)\Z}i,
 	message: 'must be a URL for GIF, JPG or PNG image.'
 	}
-	
+	default_scope :order => 'title'
 	#validate :validate_swissPrice
 	
 	# protected

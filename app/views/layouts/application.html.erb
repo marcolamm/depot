@@ -9,12 +9,32 @@
  
  
 </head>
-<body>
+
+<body id="store" >
+ <div id="titel" >
+ <%= image_tag("logo.png") %>
+ <%= @page_title || "Marco's Store" %>
+ </div>
+ <div id="columns" >
+ <div id="side" >
+ <a href="http://www...." >Home</a><br />
+ <a href="http://www..../faq" >Questions</a><br />
+ <a href="http://www..../news" >News</a><br />
+ <a href="http://www..../contact" >Contact</a><br />
+ </div>
+ <div id="main" >
+ <%= yield %>
+  </div>
+ </div>
+ </body>
+ </html>
+
+<!-- <body>
 <div id="titel">
 <h2>MARCO'S WEB-STORE   </h2>
 </div>
-<center><%= yield %></center>
+<center>/center>
 
 
 </body>
-</html>
+</html> -->
