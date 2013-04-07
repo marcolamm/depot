@@ -1,7 +1,7 @@
 <% if notice %>
 <p id="notice" ><%= notice %></p>
 <% end %>
-
+<hr>
 <h1>Store</h1>
 <!-- <p>Find me in app/views/store/index.html.erb</p>
  -->
@@ -11,9 +11,10 @@
     <h3><%= product.title %></h3>
 	
 		 <%=sanitize product.description %>
+		
  <div class="price_line" >
  <span class="price"><%= number_to_currency(product.price) %></span>
-
+ <hr>
  </div>
   </div>
 <% end %>
