@@ -10,6 +10,17 @@ class Product < ActiveRecord::Base
 	message: 'must be a URL for GIF, JPG or PNG image.'
 	}
 	default_scope :order => 'title'
+	has_many :line_items
+before_destroy :ensure_not_referenced_by_any_line_item
+# ensure that there are no line items referencing this product
+def ensure_not_referenced_by_any_line_item
+	if line_items.count.zero?
+return true
+else
+errors.add(:base, 'Line Items present' )
+return false
+end
+	
 	#validate :validate_swissPrice
 	
 	# protected
@@ -17,4 +28,5 @@ class Product < ActiveRecord::Base
     # return if price = 1 
     # errors.add(:fields, "Betrag auf .05 Rappen eingeben")
   # end
+end
 end
