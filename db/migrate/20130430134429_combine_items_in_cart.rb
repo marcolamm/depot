@@ -11,7 +11,7 @@ if quantity > 1
 cart.line_items.where(:product_id=>product_id).
 delete_all
 # replace with a single item
-cart.line_items.create(:product_id=>product_id, 
+cart.line_items.create(:product=>product, 
 :quantity=>quantity)
 end
 end
