@@ -6,7 +6,7 @@ fixtures :products
     assert true
   end
 
-end
+
 test "product attributes must not be empty" do
 product = Product.new
 assert product.invalid?
@@ -63,3 +63,4 @@ end
 
 end
 
+end

@@ -42,7 +42,8 @@ class ProductsControllerTest < ActionController::TestCase
   end
 
   test "should update product" do
-    put :update, id: @product, product: { available: @product.available, description: @product.description, image_url: @product.image_url, price: @product.price, title: @product.title }
+    put :update, :id => @product.to_param, :product => @update
+	put :update, id: @product, product: { available: @product.available, description: @product.description, image_url: @product.image_url, price: @product.price, title: @product.title }
     assert_redirected_to product_path(assigns(:product))
   end
 
