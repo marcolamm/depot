@@ -2,9 +2,9 @@ require 'test_helper'
 
 class ProductTest < ActiveSupport::TestCase
 fixtures :products
-  test "the truth" do
-    assert true
-  end
+  #test "the truth" do
+   # assert true
+ # end
 
 
 test "product attributes must not be empty" do
@@ -22,11 +22,11 @@ product = Product.new(:title => "My Book Title" ,
 :image_url => "zzz.jpg" )
 product.price = -1
 assert product.invalid?
-assert_equal "must be greater than or equal to 0.01" ,
+assert_equal "must be greater than or equal to 0.05; Must be format e.g. 45.05 - smallest unit is 5 cents!!" ,
 product.errors[:price].join('; ' )
 product.price = 0
 assert product.invalid?
-assert_equal "must be greater than or equal to 0.01" ,
+assert_equal "must be greater than or equal to 0.05" ,
 product.errors[:price].join('; ' )
 product.price = 1
 assert product.valid?
@@ -40,14 +40,14 @@ Product.new(:title => "My Book Title" ,
 end
 
 test "image url" do
-ok = %w{ fred.gif fred.jpg fred.png FRED.JPG FRED.Jpg
-http://a.b.c/x/y/z/fred.gif }
-bad = %w{ fred.doc fred.gif/more fred.gif.more }
+ok = %w{ fred.gif fred.jpg fred.png FRED.JPG FRED.Jpg http://a.b.c/x/y/z/fred.gif }
+bad = %w{ fred.doc fred.gif/more fred.gif.more } 
 ok.each do |name|
 assert new_product(name).valid?, " #{name} shouldn't be invalid"
 end
 bad.each do |name|
 assert new_product(name).invalid?, " #{name} shouldn't be valid"
+end
 end
 
 test "product is not valid without a unique title" do
@@ -63,4 +63,3 @@ end
 
 end
 
-end

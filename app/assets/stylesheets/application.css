@@ -13,32 +13,9 @@
  */
 /* body {
 
-font-size: small;
-margin:20px;
-border: double 8px;
-border-color : darkgrey  ;
-width:95%;
-margin-top:10px;
-
 
 } */
-/* #titel  {
- background-color: green;
- 
- border: inset;
- font: small-caps 40px/40px "Times New Roman" , serif;
- 
- height:100px;
- padding-left:55px;
-}
-h2{
-font-family: verdana;
- font-size: 24px;
- font-stretch: wider;
- text-align:left;
-text-shadow: 2px 2px darkgrey;
-color: lightgreen;
- }*/
+
 #banner {
 background: #9c9;
 padding-top: 10px;

@@ -1,31 +1,30 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: Kaffe
-  description: Kalter Kaffe 566
-  price: 999.02
-  image_url: 
-  available: false
+ title: Apfel
+ description: Frucht
+ price: 2.00
+ image_url: apfel.jpg
+ available: true
 
 two:
-  title: Haus
-  description: Reihenhaus in St.Gallen
-  price: 1000000.55
-  image_url: guthaus.jpg
-  available: true
+ title: Haus
+ description: Reihenhaus in St.Gallen
+ price: 1000.55
+ image_url: guthaus.jpg
+ available: true
   
- three:
-  title: Bergschuhe
-  description: Salomon Climb 4.9
-  price:A66.50
-  image_url: Salewa.pdf
-  available: true
+three:
+ title: Bergschuhe
+ description: Salomon Climb 4.9
+ price: 66.50
+ image_url: Salewa.png
+ available: true
   
-  ruby:
-title: Programming Ruby 1.9
-description:
-Ruby is the fastest growing and most exciting dynamic
-language out there. If you need to get working programs
-delivered fast, you should add Ruby to your toolbox.
-price: 49.50
-image_url: ruby.png
+ruby:
+ title: Programming Ruby 1.9
+ description:
+  Ruby is the fastest growing and most exciting dynamic
+  language out there. If you need to get working programs
+ price: 49.50
+ image_url: ruby.png
