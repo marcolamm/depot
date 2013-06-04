@@ -2,8 +2,8 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.order('title ASC')
-
+    #@products = Product.order('title ASC')
+   @products = Product.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
