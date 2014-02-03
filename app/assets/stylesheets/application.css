@@ -136,7 +136,7 @@ background: #9c9;
 padding-top: 10px;
 padding-bottom: 10px;
 border-bottom: 2px solid;
-font: small-caps 40px/40px "Times New Roman" , serif;
+font: small-caps 40px/80px "helvetica" , serif;
 color: #282;
 text-align: center;
 }
@@ -150,7 +150,7 @@ background: #141;
 margin-left: 17em;
 padding-top: 4ex;
 padding-left: 2em;
-background: white;
+background: lightgrey;
 }
 #side {
 float: left;

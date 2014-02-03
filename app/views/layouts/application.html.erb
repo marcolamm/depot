@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Depot</title>
+  <title>Teraprender.ch</title>
   <%= stylesheet_link_tag "scaffold" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -14,22 +14,23 @@
 <body id="store" >
  <div id="banner" >
  <%= image_tag("logo.png") %>
- <%= @page_title || "M a r c o' s  S t o r e" %>
+ <%= @page_title || "T E R A P R E N D E R" %>
  </div>
  <div id="columns" >
  <div id="side" >
  <div id="cart" >
+ <!-- auskommentiert fuer teraprender
  <% if @cart %>
 <%= render  @cart %>
-<%end%>
+<%end%>-->
 </div>
 <br>
  
  
- <a href="http://still-fortress-7207.herokuapp.com/" >Home</a><br />
- <a href="http://www..../faq" >Questions</a><br />
- <a href="http://www..../news" >News</a><br />
- <a href="http://www..../contact" >Contact</a><br />
+ <a href="http://www.teraprender.ch/" >Home</a><br />
+ <a href="http://www.lerntherapie.ch" >SVLT - Verband Lerntherapeuten</a><br />
+ <a href="http://www..../news" >Nachrichten</a><br />
+ <a href="http://www..../contact" >Kontakt</a><br />
  </div>
  <div id="main" >
  <%= yield %>
